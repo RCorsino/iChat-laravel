@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Laravel</title>
 
-	  <link rel="stylesheet" href="{{ URL::asset('http://localhost/laravel-master/resources/assets/css/bootstrap2.css') }}"/>
+	  <link rel="stylesheet" href="{{ URL::asset('http://localhost/iChat-laravel/resources/assets/css/bootstrap2.css') }}"/>
          <!-- FONTAWESOME STYLES-->
-         <link rel="stylesheet" href="{{ URL::asset('http://localhost/laravel-master/resources/assets/css/font-awesome.css') }}"/>
-         <link rel="stylesheet" href="{{ URL::asset('http://localhost/laravel-master/resources/assets/font-awesome/css/font-awesome.min.css') }}"/>
+         <link rel="stylesheet" href="{{ URL::asset('http://localhost/iChat-laravel/resources/assets/css/font-awesome.css') }}"/>
+         <link rel="stylesheet" href="{{ URL::asset('http://localhost/iChat-laravel/resources/assets/font-awesome/css/font-awesome.min.css') }}"/>
             <!-- CUSTOM STYLES-->
-        <link rel="stylesheet" href="{{ URL::asset('http://localhost/laravel-master/resources/assets/css/custom.css') }}"/>
-        <link rel="stylesheet" href="{{ URL::asset('http://localhost/laraveltry/resources/assets/css/custom-made.css') }}"/>
+        <link rel="stylesheet" href="{{ URL::asset('http://localhost/iChat-laravel/resources/assets/css/custom.css') }}"/>
+        <link rel="stylesheet" href="{{ URL::asset('http://localhost/iChat-laravels/resources/assets/css/custom-made.css') }}"/>
         <!-- Custom Fonts -->
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
