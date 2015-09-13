@@ -14,6 +14,7 @@
     =============================================*/
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #000;
 }
 
  #wrapper {
@@ -322,6 +323,7 @@ border:0px solid black;
 }
 .navbar-header {
     background: #A70303;
+    padding:0px;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 background-color: #B40101;
@@ -542,6 +544,6 @@ ul{
 }
 
 .navbar-custom {
-    color: #000;
-    background-color: #1976d2;
+    font-color: #000;
+    background-color: #4a6e99;
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Laravel</title>
+	<title>iConfess</title>
 
 	  <link rel="stylesheet" href="{{ URL::asset('http://localhost/iChat-laravel/resources/assets/css/bootstrap2.css') }}"/>
          <!-- FONTAWESOME STYLES-->
@@ -17,6 +17,12 @@
         <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+        <!-- include the BotDetect layout stylesheet -->
+  @if (class_exists('CaptchaUrls'))
+    <link href="{{ CaptchaUrls::LayoutStylesheetUrl() }}" type="text/css" 
+      rel="stylesheet">
+  @endif
 </head>
 <body>
 
@@ -34,19 +40,25 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="{{ url('/') }}">iChat</a></li>
+					<li><a href="{{ url('/') }}">
+					<img src="{{ URL::asset('http://localhost/laravel-master/resources/assets/image/icon.png') }}" height="50px" weight="50px"></a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
-					
-						<li><a href="{{ url('/auth/login') }}">Login</a></li>
-						<li><a href="{{ url('/auth/register') }}">Register</a></li>
-						
-					
-					
+						<!-- <button type="submit" class="btn btn-primary">-->
+						<li><a href="{{ url('/auth/login') }}"><font size="20px"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></font></a></li>
+						<!-- <li><a href="{{ url('/auth/login') }}"><i class="glyphicon glyphicon-log-in" width="10%"></i>Log in</a></li>
+						 --><!--
+						<li><a href="{{ url('/auth/register') }}"><font color="#fff">Register</font></a></li> -->
 				</ul>
 			</div> 
 		</div> 
+	</nav>
+
+	<nav>
+		<div class="panel panel-defaults">
+			<h1 padding-left="100px">Welcome to iConfess!</h1>
+		</div>
 	</nav>
 @yield('guest')
 
@@ -65,13 +77,18 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="{{ url('/') }}">iChat</a></li>
+					<li><a href="#"><span style="font-size:30px" class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li><a href="#"><span style="font-size:30px" class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></a></li>
+					<li><a href="{{ url('/home') }}"><span style="font-size:30px" class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+					<li><a href="#"><span style="font-size:30px" class="glyphicon glyphicon-book" aria-hidden="true"></span></a></li>	
+					<li><a href="{{ url('/') }}">
+					<img class="imgs" src="{{ URL::asset('http://localhost/laravel-master/resources/assets/image/icon.png') }}" height="40px" weight="50px"></a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
 
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }}<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
 							</ul>

@@ -2883,6 +2883,7 @@ fieldset[disabled] .btn-default.active {
   background-color: #2c3e50;
   border-color: #2c3e50;
 }
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
@@ -3108,6 +3109,13 @@ fieldset[disabled] .btn-danger.active {
   color: #428bca;
   border-radius: 0;
 }
+
+.btn-links {
+  font-weight: normal;
+  color: #182f49;
+  border-radius: 0;
+}
+
 .btn-link,
 .btn-link:active,
 .btn-link.active,
@@ -4209,11 +4217,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #000;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
+  color: #fff;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -5318,10 +5326,22 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default {
   border-color: #ddd;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+
+.panel-defaults {
+  
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}
+
 .panel-default > .panel-heading {
   color: #333;
-  background-color: #f5f5f5;
+  background-color: #d1ecff;
   border-color: #ddd;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
@@ -6354,5 +6374,10 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+.imgs{
+  margin-left: 800%;
+  margin-right: 800%;
 }
 /*# sourceMappingURL=bootstrap.css.map */
